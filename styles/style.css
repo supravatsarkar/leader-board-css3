@@ -184,7 +184,5 @@ Media Query Style
         flex-direction: column;
         align-items: center
     }
-    .courses{
-        /* display: none; */
-    }
+
 }
