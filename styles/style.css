@@ -1,10 +1,14 @@
 /* ------------------inport fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 /* comon style or utility style or base style  */
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    padding: 0;
+    margin:0;
 }
 main{
     display: flex;
@@ -18,8 +22,59 @@ main{
     width: 870px;
     background-color: #FFFFFF;
     padding: 30px;
-    margin-bottom: 21px;
+    margin-top: 30px;
 }
+/* Logo and Navigation */
+header{
+    background-color: #562EFF;
+    width: 100%;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+nav{
+    width: 930px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.right-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-logo img{
+    width: 40.42px;
+    height: 51px;
+}
+.right-logo .logo-text{
+    margin-left: 15.5px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.navbar{
+    width: 331px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img{
+    width: 51px;
+    height: 51px;
+}
+.navbar a{
+    /* font-family: 'Poppins', sans-serif; */
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight:400;
+}
+
+
 
 /* ------------------
 top player style
