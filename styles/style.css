@@ -154,10 +154,11 @@ Top Blog Style
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 53px;
+    grid-row-gap: 30px;
 }
 .course{
     padding: 13px;
-    box-shadow: 5px 10px 15px 10px rgba(128, 128, 128, 0.322);
+    box-shadow: 5px 5px 20px 2px rgb(128 128 128 / 21%);
 }
 .course-banner img{
     width: 224px;
@@ -192,6 +193,19 @@ Media Query Style
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
+    header{
+        height: 150px;
+    }
+    nav{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: red; */
+    }
+    .navbar{
+        flex-wrap: wrap;
+    }
     .container{
         width: 100%;
     }
@@ -203,15 +217,21 @@ Media Query Style
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20px;
     }
     .player, .blog, .course-info, .coures-details, .course-banner{
         flex-direction: column;
         align-items: center
     }
+    .blog-info, .blog-author{
+        text-align: center;
+        margin-left: 0px;
+        padding: 0px 10px;
+    }
     .player-name {
         padding-left:0;
     }
-    .blogs{
+    .blogs, .players, .courses{
         grid-template-columns: repeat(1, 1fr);
         /* display: none; */
     }
